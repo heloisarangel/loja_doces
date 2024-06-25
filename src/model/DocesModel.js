@@ -50,8 +50,8 @@ update(id_doces, nome) {
   });
 
 }
-delete(id_doces, nome) {
-  let sql = `DELETE from doces WHERE id_categoria="${id_doces}"`
+delete(id_categoria) {
+  let sql = `DELETE from doces WHERE id_doces="${nome}"`
 
   
   return new Promise((resolve, reject) => {

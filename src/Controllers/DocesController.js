@@ -1,4 +1,4 @@
-import DocesModel from "../Models/DoceModel.js";
+import DocesModel from "../model/DocesModel.js";
 
 
 class DocesController {
@@ -59,10 +59,10 @@ class DocesController {
     }
   
     delete(req, res) {
-      const id_doces = req.params.id_doces;
+      const id_categoria = req.params.id_doces;
       const nome = req.body.nome;
   
-      DocesModel.delete(id_doces, nome).then(
+      DocesModel.delete(id_categoria, nome).then(
         resposta => {
           console.debug("Deletando doces")
           res.status(resposta[0]).json(resposta[1])

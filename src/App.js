@@ -11,7 +11,7 @@ server.get('/',(req,res)=>{
 
 server.get('/doce',DoceController.read);
 server.post('/doce',DoceController.create);
-server.put('/doce/:id_categoria',DoceController.update);
-server.delete('/doce/:id_catgoria',DoceController.delete);
+server.put('/doce/:id_doce',DoceController.update);
+server.delete('/doce/:id_doce',DoceController.delete);
 
 server.listen(5000);
